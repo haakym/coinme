@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  table
+    tbody
+      for coin in data
+        tr
+          td: a(href=coin.id) #{coin.symbol}
+          td &#36; #{coin.price_usd}
